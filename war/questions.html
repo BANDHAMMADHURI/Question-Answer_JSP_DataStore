@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>
+Questions Page</title></head>
+<body id="body">
+<form action="/questionsServlet" method="post">
+Question : <input type="text" name="question" id="question">
+<input type="submit" name="submit"></form>
+
+<!-- Question : <input type="text" name="question" id="question" >
+<input type="button" name="submit" value="submit" onclick="addQuestions()"> -->
+ 
+ <!-- <form name="answerForm" action="questionsServlet" method="post" style="visibility:hidden">
+Answer : <input type="text" name="answer" id="answer" >
+<input type="submit" name="submit"></form> 
+ -->
+
+</body>
+
+<!-- <script>
+function addQuestions()
+{
+	String question=document.getElementById("question").value;
+	String data={
+			"question" : question
+	}
+	jsonData=JSON.stringify(data);
+	xmlHttp = new XMLHttpRequest();
+	String some="";
+	xmlHttp.open("POST", "/questionsServlet?some="+jsonData);
+	xmlHttp.send();
+	xmlHttp.onreadystatechange = function() {
+		if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+			document.getElementById("body").innerHTML = xmlHttp.responseText;
+		}
+
+	};
+	}
+</script> -->
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Search questions</title>
+</head>
+<body>
+		
+	<!-- <form name="show" action="answerServlet" method="get"> -->
+	<!-- <div id="show"></div>
+	<input type="button" value="show question_List" id="button"
+		onclick="retrieveData();hide()"> -->
+	<!-- </form> -->
+	<form name="searchForm"  action="searchServlet" method="post">
+		Question : <input type="text" name="question" >
+		 <input	type="submit" value="submit">
+	</form>
+	
+</body>
+<!-- <script>
+	function hide() {
+
+		document.getElementById("button").style.visibility = "hidden";
+	}
+
+	function retrieveData() {
+		xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "/answerServlet");
+		xmlHttp.send();
+		xmlHttp.onreadystatechange = function() {
+			if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+				document.getElementById("show").innerHTML = xmlHttp.responseText;
+			}
+
+		};
+	}
+</script> -->
+</html>
